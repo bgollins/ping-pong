@@ -7,7 +7,14 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
 
-    $(".result").text(number)
+    if (number % 3) {
+      $(".result").text("ping")
+    } else if (number % 5) {
+      $(".result").text("pong")
+    } else {
+      $(".result").text("pingpong")
+    }
+    
     $("#result").show();
   });
 });
