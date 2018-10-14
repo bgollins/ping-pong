@@ -26,7 +26,6 @@ $(document).ready(function() {
     numberArray.forEach(function(x) {
       $('#resultList').append("<li>" + x + "</li>");
     });
-    //$(".result").text(numberArray);
     $("#result").show(numberArray);
   });
 });
